@@ -232,6 +232,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/lge/v521/proprietary/bin/cnd:system/bin/cnd \
     vendor/lge/v521/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
+    vendor/lge/v521/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/lge/v521/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/lge/v521/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/lge/v521/proprietary/bin/imscmservice:system/bin/imscmservice \
@@ -262,6 +263,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/lge/v521/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/lge/v521/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
+    vendor/lge/v521/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
+    vendor/lge/v521/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/lge/v521/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
     vendor/lge/v521/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
     vendor/lge/v521/proprietary/etc/firmware/venus-v1.b00:system/etc/firmware/venus-v1.b00 \
@@ -280,10 +283,15 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/etc/firmware/venus.mdt:system/etc/firmware/venus.mdt \
     vendor/lge/v521/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/lge/v521/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
+    vendor/lge/v521/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
     vendor/lge/v521/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
+    vendor/lge/v521/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/lge/v521/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/lge/v521/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
+    vendor/lge/v521/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/lge/v521/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
+    vendor/lge/v521/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
+    vendor/lge/v521/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/lge/v521/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/lge/v521/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/lge/v521/proprietary/lib/libaptXScheduler.so:system/lib/libaptXScheduler.so \
@@ -345,6 +353,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/lge/v521/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/lge/v521/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
+    vendor/lge/v521/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
+    vendor/lge/v521/proprietary/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
+    vendor/lge/v521/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
+    vendor/lge/v521/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
+    vendor/lge/v521/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
     vendor/lge/v521/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/lge/v521/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/lge/v521/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
