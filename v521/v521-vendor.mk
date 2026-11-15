@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2026 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -372,6 +372,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/lge/v521/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/lge/v521/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+    vendor/lge/v521/proprietary/vendor/lib/libqc-protobuf-full.so:system/vendor/lib/libqc-protobuf-full.so \
+    vendor/lge/v521/proprietary/vendor/lib/libqc-protobuf-lite.so:system/vendor/lib/libqc-protobuf-lite.so \
     vendor/lge/v521/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/lge/v521/proprietary/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
     vendor/lge/v521/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
