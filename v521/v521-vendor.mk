@@ -16,7 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/lge/v521/proprietary/bin/rild:system/bin/rild \
     vendor/lge/v521/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/lge/v521/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/lge/v521/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
@@ -31,7 +30,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/lge/v521/proprietary/lib/libmorpho_image_stab31.so:system/lib/libmorpho_image_stab31.so \
     vendor/lge/v521/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/lge/v521/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/v521/proprietary/lib/libuicc.so:system/lib/libuicc.so \
     vendor/lge/v521/proprietary/lib/libvss_bsp_qcci.so:system/lib/libvss_bsp_qcci.so \
     vendor/lge/v521/proprietary/lib/libvss_common_core.so:system/lib/libvss_common_core.so \
