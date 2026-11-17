@@ -16,7 +16,6 @@
 
 PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
-    vendor/lge/v521/proprietary/bin/rild:system/bin/rild \
     vendor/lge/v521/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
     vendor/lge/v521/proprietary/etc/firmware/cpp_firmware_v1_1_6.fw:system/etc/firmware/cpp_firmware_v1_1_6.fw \
     vendor/lge/v521/proprietary/etc/firmware/cpp_firmware_v1_2_0.fw:system/etc/firmware/cpp_firmware_v1_2_0.fw \
@@ -31,7 +30,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/lge/v521/proprietary/lib/libmorpho_image_stab31.so:system/lib/libmorpho_image_stab31.so \
     vendor/lge/v521/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/lge/v521/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/v521/proprietary/lib/libuicc.so:system/lib/libuicc.so \
     vendor/lge/v521/proprietary/lib/libvss_bsp_qcci.so:system/lib/libvss_bsp_qcci.so \
     vendor/lge/v521/proprietary/lib/libvss_common_core.so:system/lib/libvss_common_core.so \
@@ -234,6 +232,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/lge/v521/proprietary/bin/cnd:system/bin/cnd \
     vendor/lge/v521/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
+    vendor/lge/v521/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/lge/v521/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/lge/v521/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/lge/v521/proprietary/bin/imscmservice:system/bin/imscmservice \
@@ -242,7 +241,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/lge/v521/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/lge/v521/proprietary/bin/msm_irqbalance:system/bin/msm_irqbalance \
-    vendor/lge/v521/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/lge/v521/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/lge/v521/proprietary/bin/pm-service:system/bin/pm-service \
     vendor/lge/v521/proprietary/bin/qmuxd:system/bin/qmuxd \
@@ -264,6 +262,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/lge/v521/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/lge/v521/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
+    vendor/lge/v521/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
+    vendor/lge/v521/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/lge/v521/proprietary/etc/firmware/a420_pfp.fw:system/etc/firmware/a420_pfp.fw \
     vendor/lge/v521/proprietary/etc/firmware/a420_pm4.fw:system/etc/firmware/a420_pm4.fw \
     vendor/lge/v521/proprietary/etc/firmware/venus-v1.b00:system/etc/firmware/venus-v1.b00 \
@@ -347,6 +347,12 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/lge/v521/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/lge/v521/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
+    vendor/lge/v521/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
+    vendor/lge/v521/proprietary/vendor/lib/libdpmfdmgr.so:system/vendor/lib/libdpmfdmgr.so \
+    vendor/lge/v521/proprietary/vendor/lib/libdpmframework.so:system/vendor/lib/libdpmframework.so \
+    vendor/lge/v521/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
+    vendor/lge/v521/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
+    vendor/lge/v521/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/lge/v521/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/lge/v521/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
     vendor/lge/v521/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
@@ -374,6 +380,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/v521/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/lge/v521/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
     vendor/lge/v521/proprietary/vendor/lib/libqcmaputils.so:system/vendor/lib/libqcmaputils.so \
+    vendor/lge/v521/proprietary/vendor/lib/libqc-protobuf-full.so:system/vendor/lib/libqc-protobuf-full.so \
+    vendor/lge/v521/proprietary/vendor/lib/libqc-protobuf-lite.so:system/vendor/lib/libqc-protobuf-lite.so \
     vendor/lge/v521/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/lge/v521/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
     vendor/lge/v521/proprietary/vendor/lib/libqisl.so:system/vendor/lib/libqisl.so \
